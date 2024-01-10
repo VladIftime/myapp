@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'RetroVolt';
+    src: url('/retrovoltdemoversionregular-ywd0m.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Teenage';
+    src: url('/Teenage-Garde-BF659c0e878407a.otf') format('opentype');
+}
+
+body {
+    font-family: 'RetroVolt', sans-serif;
+}
+
+.glass-effect {
+    
+  background: linear-gradient(top, #a95, #f2f2f2 25%, #ffffff 38%, #c5c5c5 63%, #f7f7f7 87%, #a95);
+  background: -webkit-linear-gradient(top, #a95, #fea 25%, #ffffff 38%, #dc8  63%, #fea 87%, #a95);
+
+}
+
+.content, .content2 {
+	position: relative;
+        height: 8em; /* Adjust this value as needed */
+
+}
+
+.content h2, .content2 h2 {
+	color: #fff;
+    position: absolute;
+	font-size: 8em;
+	transform: translate(-50%, 0);
+}
+
+.content h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 4px #8F96EB;
+}
+
+.content h2:nth-child(2) {
+	color: #ECD638;
+	animation: animate 4s ease-in-out infinite;
+}
+
+.content2 h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 4px #8F96EB;
+}
+
+.content2 h2:nth-child(2) {
+	color: #ECD638;
+	animation: animate2 5s ease-in-out infinite;
+}
+
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 300%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 300%
+		);
+	}
+}
+
+@keyframes animate2 {
+    0%, 100% {
+        clip-path: polygon(0% 46.25%, 4.98% 46.25%, 15.08% 47.5%, 21.33% 48.38%, 28.87% 49%, 35.68% 50.5%, 43.59% 51.27%, 51.32% 52.16%, 58.59% 50.4%, 65.13% 51.27%, 69.94% 51.28%, 77.26% 51.28%, 86.67% 51.27%, 100% 49.98%, 100% 0%, 0% 0%);
+    }
+
+    50%{
+        clip-path: polygon(0% 46.25%, 4.98% 46.25%, 15.08% 47.5%, 21.33% 48.38%, 28.87% 49%, 35.68% 50.5%, 41.6% 62.95%, 47.07% 75.39%, 54.33% 76.91%, 60.13% 73.36%, 65.85% 48.64%, 73.79% 47.62%, 80.19% 47.9%, 100% 49.98%, 100% 0%, 0% 0%);
+    }
+}

@@ -1,0 +1,196 @@
+@keyframes updown {
+    0%   {top: 110%;}
+  50%  {top: 0;}
+   100%  {top: 110%;}
+}
+
+@keyframes leftright {
+    0%   {left: 0;}
+  50%  {left: 80%;}
+   100%  {left: 0;}
+}
+
+@keyframes vastag {
+    0%   {width: 8vh;}
+  50%  {width: 32vh;}
+   100%  {width: 8vh;}
+}
+
+@keyframes forog {
+  100% {transform: rotate(360deg);}
+}
+
+
+html {
+  height: 100%;
+  background: radial-gradient(circle, rgba(69,16,64,1) 30%, rgba(88,20,63,1) 69%, rgba(100,22,63,1) 80%, rgba(111,24,62,1) 84%, rgba(157,33,60,1) 100%);
+}
+body {
+  min-height: 100%;
+}
+
+.bubble-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#lamp {
+  width: 50vh;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+#glass {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  filter: contrast(1);
+  background: linear-gradient(90deg, #20DDFF 0%, #00EEA9 100%);
+  box-shadow: inset 0 -5vh 1vh 1vh #0391AA, 0 0 2.5px .2px #155756;
+  border-radius: 1vh 1vh 5vh 5vh;
+}
+
+#glass::after{
+    content: ' ';
+  display: block;
+  position: absolute;
+  background: linear-gradient(rgba(255,255,255,.6), rgba(128,128,255,.3));
+  width: 4vh;
+  height: 100vh;
+  margin-left: -17vh;
+  left: 50%;
+  bottom: 20vh;
+  z-index: 2;
+  border-radius: 1vh 1vh 2vh 2vh;
+  filter: blur(.5vh);
+  transform: skewX(-2deg);
+}
+
+.bubble {
+    overflow: hidden;
+  height: 16vh;
+  border-radius: 40%;
+  background: #DB265E;
+  position: absolute;
+  filter: blur(3vh);
+  animation: updown linear 37s infinite,
+    leftright ease-in-out 23s infinite,
+    vastag linear 29s infinite,
+    forog linear 31s infinite;
+}
+.bubble:nth-child(2) {
+  animation: updown ease-in 41s infinite,
+    leftright ease-in-out 47s infinite,
+    vastag linear 23s infinite,
+    forog linear 29s infinite;
+}
+.bubble:nth-child(3) {
+  animation: updown ease-out 43s infinite,
+    leftright ease-in-out 53s infinite,
+    vastag linear 29s infinite,
+    forog linear 31s infinite;
+}
+.bubble:nth-child(4) {
+  animation: updown ease-in-out 47s infinite,
+    leftright ease-in-out 59s infinite,
+    vastag linear 31s infinite,
+    forog linear 41s infinite;
+}
+.bubble:nth-child(5) {
+  animation: updown ease-in-out 29s infinite,
+    leftright ease-in-out 31s infinite,
+    vastag linear 37s infinite,
+    forog linear 47s infinite;
+}
+.bubble:nth-child(6) {
+  animation: updown ease-in-out 31s infinite,
+    leftright ease-in-out 37s infinite,
+    vastag linear 41s infinite,
+    forog linear 53s infinite;
+}
+.bubble:nth-child(7) {
+  animation: updown ease-in-out 37s infinite,
+    leftright ease-in-out 41s infinite,
+    vastag linear 47s infinite,
+    forog linear 59s infinite;
+}
+.bubble:nth-child(8) {
+  animation: updown ease-in-out 41s infinite,
+    leftright ease-in-out 43s infinite,
+    vastag linear 53s infinite,
+    forog linear 31s infinite;
+}
+.bubble:last-child {
+  animation: updown linear 53s infinite,
+    leftright ease-in-out 29s infinite,
+    vastag linear 19s infinite,
+    forog linear 37s infinite;
+}
+
+.bubble-2 {
+  height: 16vh;
+  border-radius: 40%;
+  background: #0FFF50;
+  position: absolute;
+  filter: blur(1vh);
+  animation: updown linear 37s infinite,
+    leftright ease-in-out 23s infinite,
+    vastag linear 29s infinite,
+    forog linear 31s infinite;
+}
+.bubble-2:nth-child(2) {
+  animation: updown ease-in 41s infinite,
+    leftright ease-in-out 47s infinite,
+    vastag linear 23s infinite,
+    forog linear 29s infinite;
+}
+.bubble-2:nth-child(3) {
+  animation: updown ease-out 43s infinite,
+    leftright ease-in-out 53s infinite,
+    vastag linear 29s infinite,
+    forog linear 31s infinite;
+}
+.bubble-2:nth-child(4) {
+  animation: updown ease-in-out 47s infinite,
+    leftright ease-in-out 59s infinite,
+    vastag linear 31s infinite,
+    forog linear 41s infinite;
+}
+.bubble-2:nth-child(5) {
+  animation: updown ease-in-out 29s infinite,
+    leftright ease-in-out 31s infinite,
+    vastag linear 37s infinite,
+    forog linear 47s infinite;
+}
+.bubble-2:nth-child(6) {
+  animation: updown ease-in-out 31s infinite,
+    leftright ease-in-out 37s infinite,
+    vastag linear 41s infinite,
+    forog linear 53s infinite;
+}
+.bubble-2:nth-child(7) {
+  animation: updown ease-in-out 37s infinite,
+    leftright ease-in-out 41s infinite,
+    vastag linear 47s infinite,
+    forog linear 59s infinite;
+}
+.bubble-2:nth-child(8) {
+  animation: updown ease-in-out 41s infinite,
+    leftright ease-in-out 43s infinite,
+    vastag linear 53s infinite,
+    forog linear 31s infinite;
+}
+.bubble-2:last-child {
+  animation: updown linear 53s infinite,
+    leftright ease-in-out 29s infinite,
+    vastag linear 19s infinite,
+    forog linear 37s infinite;
+}
+

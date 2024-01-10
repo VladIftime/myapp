@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+</script>
+
+<div class="flex flex-col items-center justify-center space-y-4 h-screen">
+	<h1 class="text-7xl text-info">Welcome to</h1>
+	<div class="content2">
+		<h2 class="text-9xl">LavaLinks</h2>
+		<h2 class="text-9xl">LavaLinks</h2>
+	</div>
+	<h3 class="text-7xl text-info">One link to share your whole online presence</h3>
+	<div class="content">
+		<h2 class="text-8xl">aesthetically</h2>
+		<h2 class="text-8xl">aesthetically</h2>
+	</div>
+	<!-- Two buttons next to eachoter that lead to different routes -->
+	<div class="flex space-x-4">
+		<a href="/login" class="button-shiny aubergine text-xl flex items-center"> Login </a>
+		<a href="/dick_van" class="button-shiny night-sky text-xl flex items-center"> Example profile </a>
+	</div>
+</div>
