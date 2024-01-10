@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import './layout.css';
+	import '../layout.css';
 	import '../special_buttons.css';
 	import { auth, user, userData } from '$lib/firebase';
 
