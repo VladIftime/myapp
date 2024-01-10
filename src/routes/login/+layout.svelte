@@ -6,15 +6,15 @@
 
 <nav class="flex justify-center my-6">
 	<ul class="steps">
-		<a href="/login" class="step step-primary">Sign In</a>
+		<a href="/login" class="step step-info text-info">Sign In</a>
 		<a
 			href="/login/username"
-			class="step"
-			class:step-primary={$page.route.id?.includes('username') || $page.route.id?.includes('photo')}
+			class="step text-info"
+			class:step-info={$page.route.id?.includes('username') || $page.route.id?.includes('photo')}
 		>
 			Choose Username
 		</a>
-		<a href="/login/photo" class="step" class:step-primary={$page.route.id?.includes('photo')}>
+		<a href="/login/photo" class="step text-info" class:step-info={$page.route.id?.includes('photo')}>
 			Upload Photo
 		</a>
 	</ul>

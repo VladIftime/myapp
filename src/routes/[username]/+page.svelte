@@ -39,7 +39,7 @@
 	<h1 class="text-5xl text-primary font-bold m-3 text-center">
 		@{data?.username}
 	</h1>
-	<img src={data.photoURL ?? '/user.png'} alt="photoURL" width="256" class="mx-auto" />
+	<img src={data.photoURL ?? '/user.png'} alt="User photo" width="256" class="mx-auto" loading="eager"/>
 
 	<p class="text-2xl text-primary my-8 text-center">{data?.bio ?? 'no bio yet...'}</p>
 	<ul class="list-none p-0 flex flex-col items-center">

@@ -70,23 +70,9 @@
 	}
 </script>
 
-<div class="navbar transparent">
+<div class="navbar transparent relative z-10">
 	<div class="flex-1">
 		<a href="/{$userData?.username}" class="button-shiny purple-pink-two text-l flex items-center">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke="currentColor"
-				class="h-6 w-6 mr-2 inline-block"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M10 19l-7-7m0 0l7-7m-7 7h18"
-				></path>
-			</svg>
 			Back to Profile
 		</a>
 	</div>

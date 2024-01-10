@@ -10,5 +10,5 @@
 
 	<UploadPhoto />
 
-	<a {href} class="btn btn-primary"> Finish </a>
+	<a {href} class="btn btn-primary">Finish</a>
 </AuthCheck>
