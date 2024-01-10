@@ -12,5 +12,5 @@ max-w-80
 >
 	<span class="shine"></span>
 	<img src={`/${icon}.png`} alt={icon} width="32" height="32" class="w-8 inline-block" />
-	<span class="inline-block text-xl">{title}</span>
+	<span class="inline-block text-center text-xl">{title}</span>
 </a>

@@ -26,18 +26,16 @@
 		<div class="bubble-2"></div>
 	</div>
 </div>
-<!-- Have a dedicated button in the top right corner that is visible only if the userid matches the user of the page. This should lead to the /[username]/edit route -->
-<AuthCheck>
-	{#if data.username === $userData?.username}
-		<a
-			href="{data.username}/edit"
-			class="button-shiny purple-pink-two relative top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:absolute sm:top-5 sm:right-0 sm:m-4 sm:py-0"
-			>Edit Profile</a
-		>
-	{/if}
-</AuthCheck>
-
+<!-- Have a dedicated button in the top right corner that is visible only if the user id matches the user of the page. This should lead to the /[username]/edit route -->
 <main class="max-w-xl mx-auto relative z-10">
+	<AuthCheck>
+		{#if data.username === $userData?.username}
+			<div class="flex justify-center">
+				<a href="{data.username}/edit" class="button-shiny purple-pink-two"> Edit Profile </a>
+			</div>
+		{/if}
+	</AuthCheck>
+
 	<h1 class="text-5xl text-primary font-bold m-3 text-center">
 		@{data?.username}
 	</h1>
