@@ -3,7 +3,7 @@
 	import '../layout.css';
 	import '../special_buttons.css';
 	import { auth, user, userData } from '$lib/firebase';
-
+	import 'tailwindcss/tailwind.css';
 	$user;
 	$userData;
 </script>
@@ -21,8 +21,6 @@
 		<div class="bubble"></div>
 		<div class="bubble"></div>
 		<div class="bubble"></div>
-
-		
 
 		<div class="relative z-10">
 			<slot />
